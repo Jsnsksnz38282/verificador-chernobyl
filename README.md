@@ -17,6 +17,19 @@ Ejecuta el programa con:
 python verificador.py
 
 En Linux:
+## 🐧 Uso en Linux
+
+Clona el repositorio:
+
+git clone https://github.com/Jsnsksnz38282/verificador-chernobyl.git
+
+Entra a la carpeta:
+
+cd verificador-chernobyl
+
+Ejecuta el programa:
+
+python3 verificador.py
 
 python3 verificador.py
 
