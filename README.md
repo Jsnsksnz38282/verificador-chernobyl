@@ -1,0 +1,31 @@
+# 💀 Verificador Chernobyl
+
+Aplicación en Python con interfaz gráfica para verificar y generar contraseñas seguras.
+
+## 🧠 Funciones
+
+- Verificación de seguridad de contraseñas
+- Generación automática de contraseñas seguras
+- Barra visual de seguridad
+- Opción para mostrar u ocultar contraseña
+- Interfaz estilo hacker (negro + verde)
+
+## 🚀 Uso
+
+Ejecuta el programa con:
+
+python verificador.py
+
+En Linux:
+
+python3 verificador.py
+
+## ⚙️ Requisitos
+
+- Python 3
+- Tkinter
+
+## 📂 Archivos
+
+- verificador.py
+- logo.txt
