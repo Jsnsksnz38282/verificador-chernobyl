@@ -31,8 +31,6 @@ Ejecuta el programa:
 
 python3 verificador.py
 
-python3 verificador.py
-
 ## ⚙️ Requisitos
 
 - Python 3
