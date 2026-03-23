@@ -5,6 +5,16 @@ import re
 import time
 
 # =========================
+# CARGAR LOGO
+# =========================
+def cargar_logo():
+    try:
+        with open("logo.txt", "r", encoding="utf-8") as f:
+            return f.read()
+    except:
+        return "VERIFICADOR CHERNOBYL"
+
+# =========================
 # RESPONSIVE
 # =========================
 def on_resize(event):
@@ -47,7 +57,7 @@ def tiempo_crack(password):
         return "No definido"
 
     combinaciones = charset ** len(password)
-    velocidad = 1_000_000_000  # intentos por segundo
+    velocidad = 1_000_000_000
 
     segundos = combinaciones / velocidad
 
@@ -121,6 +131,11 @@ root.geometry("700x500")
 root.configure(bg="#0d0d0d")
 
 root.bind("<Configure>", on_resize)
+
+# 🔥 LOGO
+logo_text = cargar_logo()
+logo_label = tk.Label(root, text=logo_text, fg="#00ff00", bg="#0d0d0d", font=("Courier", 8), justify="left")
+logo_label.pack(pady=5)
 
 # Título
 titulo = tk.Label(root, text="VERIFICADOR CHERNOBYL", fg="#00ff00", bg="#0d0d0d", font=("Courier", 18, "bold"))
